@@ -1,0 +1,151 @@
+.navbar {
+  background: transparent;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  z-index: 3;
+  transition: var(--transition-2);
+}
+.navbar-bg {
+  background: var(--black-rgb);
+}
+.nav-btn {
+  width: 35px;
+  cursor: pointer;
+}
+.hamburger {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition-1);
+}
+
+.bar {
+  background: var(--black);
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  transition: var(--transition-1);
+  margin-bottom: 0.5rem;
+}
+
+.barw {
+  background: var(--white);
+}
+
+.bar-1 {
+  width: 50%;
+}
+.bar-3 {
+  position: absolute;
+  bottom: -0.7rem;
+  right: 0;
+  width: 50%;
+}
+
+.cross {
+  position: relative;
+  top: -12px;
+  transition: var(--transition-1);
+}
+.cross-1 {
+  transform: rotate(45deg);
+  position: absolute;
+}
+.cross-2 {
+  transform: rotate(-45deg);
+  position: absolute;
+}
+.hamburger:hover .bar-1 {
+  width: 100%;
+}
+.hamburger:hover .bar-3 {
+  width: 100%;
+}
+.hide-bars {
+  width: 0px;
+}
+.hide-close {
+  display: none;
+}
+.show-close {
+  display: block;
+}
+
+.nav-center {
+  position: relative;
+  width: 100vw;
+  max-width: 1270px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 55px;
+}
+.links-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-center {
+    width: 90vw;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .links-container {
+    width: 40vw;
+    max-width: 450px;
+    display: block;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(0);
+  }
+  .nav-links li {
+    margin: 0 1rem;
+  }
+
+  .nav-links a {
+    color: var(--black);
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: lighter;
+    transition: var(--transition-2);
+    cursor: pointer;
+  }
+  .nav-links li:hover a {
+    color: var(--grey);
+  }
+  .nav-links li .link {
+    color: var(--white);
+  }
+  .nav-links li:hover .link {
+    color: var(--primary);
+  }
+
+  .nav-header img {
+    width: 34px;
+  }
+}

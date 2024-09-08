@@ -1,0 +1,20 @@
+.footer {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background: var(--black);
+
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 0;
+  padding: 1rem 0;
+  color: var(--white);
+}
+
+.footer-line {
+  height: 2px;
+  width: 100%;
+  background: var(--white);
+}
